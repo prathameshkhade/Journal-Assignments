@@ -36,10 +36,10 @@ class Result extends Test {
 
     public void printData() {
 
-        System.out.prinln("Roll no: " + roll);
-        System.out.prinln("Name: " + name);
-        System.out.prinln("Total: " + total);
-        System.out.prinln("Percentage: " + per);
+        System.out.println("Roll no: " + roll);
+        System.out.println("Name: " + name);
+        System.out.println("Total: " + total);
+        System.out.println("Percentage: " + per);
     }
 }
 
