@@ -1,18 +1,20 @@
-import calculateArea;
-import System.until.Scanner;
+import pkgArea.area;
+import java.util.Scanner;
 
-public static void main(String[] args) {
-    
-    Scanner s = new Scanner(System.in);
+class Assign4 {
 
-    System.out.prinln("Enter legth and breadth of rectangle: ");
-    int len = s.nextInt();
-    int breadth = s.nextInt();
-    System.out.prinln("Area of Rectangle = " + Area.Rectangle(len, breadth));
+	public static void main (String[] args) {
 
-    System.out.prinln("\nEnter radius of circle: ");
-    int rad = s.nextInt();
-    System.out.prinln("Area of circle = " + Area.Circle(rad));
+		Scanner s = new Scanner(System.in);
+		area a = new area();
 
-    s.close();
+		System.out.println("Enter length and breadth: ");
+		int len = s.nextInt();
+		int breadth = s.nextInt();
+		System.out.println("Area of Rectangle: " + a.rectangle(len, breadth));
+
+		System.out.println("\nEnter radius of circle: ");
+		int rad = s.nextInt();
+		System.out.println("Area of Circle: " + a.circle(rad));
+	}
 }

@@ -46,8 +46,19 @@ class Result extends Test {
 class assign2 {
 
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
         
-        Result prachi = new Result(36, "Prachi", 99, 98, 92);
-        prachi.printData();
+        System.out.println("Enter Roll number: ");
+        int r = sc.nextInt();
+        System.out.println("Enter name: ");
+        String nm = sc.nextLine();
+        System.out.println("Enter three subject marks: ");
+        int m1 = s.nextInt();
+        int m2 = s.nextInt();
+        int m3 = s.nextInt();
+
+        Result Rutuja = new Result(r, nm, m1, m2, m3);
+        Rutuja.printData();
     }
 }
